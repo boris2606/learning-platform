@@ -58,12 +58,12 @@
 .git_link,
 .js_link,
 .react_link{
-    padding: 7px 5px;
+    padding: 5px 5px;
     width: 100%;
 }
 .git_link{
     text-decoration: none;
-    font: 700 14px Comfortaa;
+    font: 700 11px Comfortaa;
     color: #010101;
     border: 2px solid #010101;
     border-radius: 5px;
@@ -76,7 +76,7 @@
 }
 .js_link{
     text-decoration: none;
-    font: 700 14px Comfortaa;
+    font: 700 11px Comfortaa;
     color: #000001;
     border: 2px solid #000001;
     border-radius: 5px;
@@ -88,7 +88,7 @@
 }
 .react_link{
     text-decoration: none;
-    font: 700 14px Comfortaa;
+    font: 700 11px Comfortaa;
     color: #61DAFB;
     border: 2px solid #61DAFB;
     border-radius: 5px;
@@ -101,19 +101,23 @@
 
 .git_block:hover{
     .hidden_block_git{
-        opacity: .9;
         right: 0px;
-        color: #010101;
         width: 100%;
+        top: -5px;
+        height: 160px;
+        opacity: .95;
+        color: #010101;
         max-width: 150px;
         background-color:rgba(254,254,254,.95);
     }
 }
 .js_block:hover{
     .hidden_block_js{
-        opacity: .95;
         right: 0px;
         width: 100%;
+        top: -5px;
+        height: 160px;
+        opacity: .95;
         color: #000001;
         max-width: 150px;
         background-color: rgba(247,223,55,.95);
@@ -121,9 +125,11 @@
 }
 .react_block:hover{
     .hidden_block_react{
-        opacity: .9;
         right: 0px;
         width: 100%;
+        top: -5px;
+        height: 160px;
+        opacity: .95;
         color: #61DAFB;
         max-width: 150px;
         background-color: rgba(34,34,34, .95);
