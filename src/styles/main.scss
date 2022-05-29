@@ -148,6 +148,8 @@
     position: absolute;
     right: -15px;
     height: 150px;
+    width: 100%;
+    max-width: 150px;
     top: 0;
     transition: .2s all ease-in-out;
 }
