@@ -1,0 +1,147 @@
+@use 'reset';
+@use 'fonts';
+@import "~bootstrap/scss/bootstrap";
+
+.content{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+.git_block,
+.js_block,
+.react_block{
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    background: #ccc;
+    display: block;
+    height: 150px;
+    text-align: center;
+    margin: 20px 0;
+    transition: .5s all ease-in-out;
+    border-radius: 50px 5px 5px 5px ;
+    box-shadow: 0px 3px 6px -1px rgba(0,0,0,0.75);
+}
+.img_block{
+    width: 100%;
+    max-width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    left: 0;
+    animation: rotate 2s infinite;
+}
+@keyframes rotate{
+    0% {
+        transform:rotateZ(0deg);
+    }
+    50% {
+        transform:rotateZ(15deg);
+    }
+    100% {
+        transform:rotateZ(0deg);
+    }
+}
+
+.tit_block_text{
+    color: rgba(26, 25, 25, 0.808);
+    font: 800 20px Comfortaa;
+    margin: 40px 75px;
+}
+.git_link,
+.js_link,
+.react_link{
+    padding: 7px 5px;
+    width: 100%;
+}
+.git_link{
+    text-decoration: none;
+    font: 700 14px Comfortaa;
+    color: #010101;
+    border: 2px solid #010101;
+    border-radius: 5px;
+    transition: .5s all ease-in-out;
+
+    &:hover{
+        background-color:#010101;
+        color: rgba(254,254,254,.95);
+    }
+}
+.js_link{
+    text-decoration: none;
+    font: 700 14px Comfortaa;
+    color: #000001;
+    border: 2px solid #000001;
+    border-radius: 5px;
+    transition: .5s all ease-in-out;
+    &:hover{
+        background-color:#000001;
+        color: rgba(247,223,55,.95);
+    }
+}
+.react_link{
+    text-decoration: none;
+    font: 700 14px Comfortaa;
+    color: #61DAFB;
+    border: 2px solid #61DAFB;
+    border-radius: 5px;
+    transition: .5s all ease-in-out;
+    &:hover{
+        background-color:#61DAFB;
+        color: rgba(34,34,34, .95);
+    }
+}
+
+.git_block:hover{
+    .hidden_block_git{
+        opacity: .9;
+        right: 0px;
+        color: #010101;
+        width: 100%;
+        max-width: 150px;
+        background-color:rgba(254,254,254,.95);
+    }
+}
+.js_block:hover{
+    .hidden_block_js{
+        opacity: .95;
+        right: 0px;
+        width: 100%;
+        color: #000001;
+        max-width: 150px;
+        background-color: rgba(247,223,55,.95);
+    }
+}
+.react_block:hover{
+    .hidden_block_react{
+        opacity: .9;
+        right: 0px;
+        width: 100%;
+        color: #61DAFB;
+        max-width: 150px;
+        background-color: rgba(34,34,34, .95);
+    }
+}
+.hidden_block_js,
+.hidden_block_git,
+.hidden_block_react{
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 10px ;
+    opacity: 0;
+    position: absolute;
+    right: -15px;
+    height: 150px;
+    top: 0;
+    transition: .2s all ease-in-out;
+}
