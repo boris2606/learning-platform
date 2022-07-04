@@ -135,6 +135,35 @@
         background-color: rgba(34,34,34, .95);
     }
 }
+.wrapper_hidden_block{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.bg_img_video{
+    width: 39px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    left: -39px;
+    top: -6px;
+}
+.btn_git{
+    background: url(../img/play_btn_git.png) no-repeat center;
+    background-color: rgba(254, 254, 254, 0.95);
+    border-radius: 50%;
+}
+.btn_js{
+    background: url(../img/play_btn_git.png) no-repeat center;
+    background-color: rgba(247, 223, 55, 0.95);
+    border-radius: 50%;
+}
+.btn_react{
+    background: url(../img/play_react.png) no-repeat center;
+    background-color: rgba(34, 34, 34, 0.95);
+    border-radius: 50%;
+}
 .hidden_block_js,
 .hidden_block_git,
 .hidden_block_react{
